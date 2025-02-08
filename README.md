@@ -63,7 +63,7 @@ python ml_based/run_strategy.py --model models/trained_model.pkl
 Both strategies include extensive **backtesting and performance evaluation**. Refer to individual strategy READMEs for results:
 
 - **[Pair Trading Results](./pair_trading/README.md)**
-- **[ML-Based Trading Results](./ml_based/README.md)**
+- **[ML-Based Trading Results](./ML_based/README.md)**
 
 ## Contributing
 Contributions are welcome! If you have improvements, please submit a pull request with well-documented changes.
