@@ -24,18 +24,6 @@ Ensure you have Python 3.8 or higher installed. Then, install dependencies:
 pip install -r requirements.txt
 ```
 
-## Usage
-### Running the Pair Trading Strategy
-```bash
-python pair_trading/run_strategy.py --config configs/pair_trading_config.json
-```
-
-### Running the ML-Based Trading Strategy
-```bash
-python ml_based/train_model.py --config configs/ml_config.json
-python ml_based/run_strategy.py --model models/trained_model.pkl
-```
-
 ## Strategy Breakdown
 ### **Pair Trading Strategy**
 - **Objective**: Identify and exploit mean-reverting pairs for market-neutral trading.
@@ -51,7 +39,7 @@ python ml_based/run_strategy.py --model models/trained_model.pkl
 ### **ML-Based Trading Strategy**
 - **Objective**: Use machine learning to predict price movements and optimize trade execution.
 - **Key Components**:
-  - Feature Engineering: Technical indicators (SMA, RSI, MACD, Bollinger Bands, ATR)
+  - Feature Engineering: Technical indicators (SMA, RSI, MACD, Bollinger Bands, ATR, ADX)
   - ML Models: Random Forest, Gradient Boosting Machines, Ensemble Voting Classifier
   - Walk-Forward Optimization: Periodic retraining for improved robustness
 - **Performance Metrics**:
